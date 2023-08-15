@@ -2,6 +2,7 @@
 using namespace std;
 int main(){
     /*======explorer more==========
+    ===============================
     1.operator >,<, & , 
     2.increment, decrmentOperator effect when store or assign
     3.localScope, globalScope, priority 
@@ -34,9 +35,9 @@ int main(){
 
 
 /*=========Time complexity=========
-
+===================================
 */
-
+    
 
 
 
