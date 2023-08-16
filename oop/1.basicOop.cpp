@@ -3,11 +3,11 @@ using namespace std;
 
 class Hero{
 
-    /*========Access modifier===========
-    public => access inside & outside class
-    private => 
-    */
-    //public:
+/*========Access modifier===========
+public => access inside & outside class
+private => 
+*/
+
     private:
     int health;
     public:

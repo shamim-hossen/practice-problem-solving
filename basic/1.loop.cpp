@@ -1,14 +1,15 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
-    /*======explorer more==========
-    ===============================
-    1.operator >,<, & , 
-    2.increment, decrmentOperator effect when store or assign
-    3.localScope, globalScope, priority 
-    
-    
-    */
+/*======explorer more==========
+===============================
+1.operator >,<, & , 
+2.increment, decrmentOperator effect when store or assign
+3.localScope, globalScope, priority 
+4.interface
+5.friend function
+
+*/
 
 
 //loop=> while 
