@@ -4,8 +4,12 @@ using namespace std;
 class Hero{
 
 /*========Access modifier===========
-public => access inside & outside class
-private => 
+public => accessible from anywhere
+private =>only accessible within the class where it's declared
+protected => accessible within the class and its subclasses
+
+
+
 */
 
     private:
@@ -57,7 +61,7 @@ int main(){
     copy assignment
     pass by value 
     pass by reference ✔
-    deep copy =copy duplicate obj=(custor constructor)
+    deep copy =copy duplicate obj=(custom constructor)
     shallow copy=copy reference=(default conostructor)
 
     ====HW=======
