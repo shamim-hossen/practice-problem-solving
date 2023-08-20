@@ -4,6 +4,7 @@ using namespace std;
 class Hero{
 
 /*========Access modifier===========
+videoLink= https://youtu.be/OQ0En1dQ3zI
 public => accessible from anywhere
 private =>only accessible within the class where it's declared
 protected => accessible within the class and its subclasses
@@ -112,25 +113,24 @@ int main(){
     cout<<"Health is: "<<b->getHealth()<<endl;
 */
 
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     return 0;
 }
+
+
+/*
+#include<iostream>
+using namespace std;
+
+class Student{          //class jo object produce kare
+    string name;
+    int age;
+    bool gender;
+};
+
+int main()
+{
+    Student yash;       //object jo akhose dekha jatahe,any real world entity
+    yash.name = "Yash"; 
+    return 0;
+}
+*/
