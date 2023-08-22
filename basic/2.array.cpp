@@ -19,21 +19,29 @@ int main(){
     
     Homogeneous data==array, same time data
     Heterogeneous data==tree ka node,left/right child pointer inside data
-
+    ==============ARRAY=====================
+    dataType arrayName[arraySize];//declaration
+    int myArr[5]={1,2,3,4,5};//declaraion with initialization
+    int myArr[]={1,2,3,4,5};//declaraion with initialization without size
+    myArr[2]=-1;//2index pe -1 data element 
 
 
     */
-    int a[10];
-    //input
-    for(int i=0;i<3;i++){
-        scanf("%d",&a[i]);
-    }
-    //output
-    for(int i=0;i<3;i++){
-        printf("%d",a[i]);
-    }
+    // int a[10];
+    // //input
+    // for(int i=0;i<3;i++){
+    //     scanf("%d",&a[i]);
+    // }
+    // //output
+    // for(int i=0;i<3;i++){
+    //     printf("%d",a[i]);
+    // }
 
     //2d array
+
+
+
+
 
     return 0;
 }
