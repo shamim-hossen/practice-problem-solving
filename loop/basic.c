@@ -61,3 +61,6 @@ int main() {
     return 0;
 }
 
+/**
+1. count how many even and odd numbers are in a list
+ */
