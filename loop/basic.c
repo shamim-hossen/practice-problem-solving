@@ -63,4 +63,51 @@ int main() {
 
 /**
 1. count how many even and odd numbers are in a list
+2. count how many even and odd numbers are in a list using array
  */
+
+#include <stdio.h>
+
+int main() {
+    int n, num;
+    int evenCount = 0, oddCount = 0;
+
+    printf("Enter how many numbers you want to input: ");
+    scanf("%d", &n);
+
+    for(int i = 0; i < n; i++) {
+        printf("Enter number %d: ", i + 1);
+        scanf("%d", &num);
+
+        if(num % 2 == 0)
+            evenCount++;
+        else
+            oddCount++;
+    }
+
+    printf("\nEven numbers: %d\n", evenCount);
+    printf("Odd numbers: %d\n", oddCount);
+
+    return 0;
+}
+
+// 2. count how many even and odd numbers are in a list using array
+#include <stdio.h>
+
+int main() {
+    int arr[] = {12, 7, 5, 64, 14};  // Example list
+    int n = sizeof(arr) / sizeof(arr[0]);  // Get the number of elements
+    int evenCount = 0, oddCount = 0;
+
+    for(int i = 0; i < n; i++) {
+        if(arr[i] % 2 == 0)
+            evenCount++;
+        else
+            oddCount++;
+    }
+
+    printf("Even numbers: %d\n", evenCount);
+    printf("Odd numbers: %d\n", oddCount);
+
+    return 0;
+}
