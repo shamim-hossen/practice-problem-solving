@@ -156,3 +156,7 @@ int main() {
     return 0;
 }
 
+/**
+    factorial 
+    fact*=1
+*/
