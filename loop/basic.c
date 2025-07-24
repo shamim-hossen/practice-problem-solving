@@ -160,3 +160,30 @@ int main() {
     factorial 
     fact*=1
 */
+
+#include <stdio.h> 
+
+int main() {
+    int number; 
+    long long factorial = 1;
+
+    printf("Enter a non-negative integer: ");
+
+    scanf("%d", &number);
+
+    if (number < 0) {
+        printf("Error: Factorial is not defined for negative numbers.\n");
+    }
+    // Handle the base cases: factorial of 0 or 1 is 1
+    else if (number == 0 || number == 1) {
+        printf("Factorial of %d is: %lld\n", number, factorial); 
+    }
+    else {
+        for (int i = 2; i <= number; i++) {
+            factorial *= i; 
+        }
+        printf("Factorial of %d is: %lld\n", number, factorial);
+    }
+
+    return 0; 
+}
