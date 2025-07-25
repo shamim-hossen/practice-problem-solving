@@ -187,3 +187,32 @@ int main() {
 
     return 0; 
 }
+
+
+
+/**
+    Compute the Sum of Digits of a Number
+ */
+
+#include <stdio.h>
+
+int main() {
+    int number, sum = 0;
+
+    printf("Enter an integer: ");
+    scanf("%d", &number);
+
+    // Make number positive if it's negative
+    if (number < 0) {
+        number = -number;
+    }
+
+    while (number != 0) {
+        sum += number % 10;  // Get last digit and add to sum
+        number = number / 10; // Remove last digit
+    }
+
+    printf("Sum of digits: %d\n", sum);
+
+    return 0;
+}
