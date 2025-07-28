@@ -248,3 +248,38 @@ int main() {
 
     return 0;
 }
+
+
+
+
+/**
+ * Find the Largest Digit in an Integer
+ */
+
+#include <stdio.h>
+#include <stdlib.h>  // For abs()
+
+int main() {
+    int num, digit, max_digit = 0;
+
+    printf("Enter an integer: ");
+    scanf("%d", &num);
+
+    num = abs(num);  // Remove negative sign
+
+    if (num == 0) {
+        max_digit = 0;
+    } else {
+        while (num != 0) {
+            digit = num % 10;
+            if (digit > max_digit) {
+                max_digit = digit;
+            }
+            num /= 10;
+        }
+    }
+
+    printf("Largest digit: %d\n", max_digit);
+
+    return 0;
+}
