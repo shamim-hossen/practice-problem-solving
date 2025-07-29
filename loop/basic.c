@@ -283,3 +283,24 @@ int main() {
 
     return 0;
 }
+
+
+
+
+/**
+ * 
+ * Find the Last Digit of an Integer
+ */
+#include <stdio.h>
+
+int main() {
+    int num;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    int lastDigit = num % 10;
+    if (lastDigit < 0) lastDigit = -lastDigit;
+
+    printf("Last digit: %d\n", lastDigit);
+    return 0;
+}
