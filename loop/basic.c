@@ -304,3 +304,28 @@ int main() {
     printf("Last digit: %d\n", lastDigit);
     return 0;
 }
+
+
+/**
+ * 
+ * count even digit in number
+ */
+#include <stdio.h>
+
+int main() {
+    int num, count = 0;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    if (num < 0) num = -num;
+
+    while (num > 0) {
+        int digit = num % 10;
+        if (digit % 2 == 0)
+            count++;
+        num /= 10;
+    }
+
+    printf("Even digit count: %d\n", count);
+    return 0;
+}
