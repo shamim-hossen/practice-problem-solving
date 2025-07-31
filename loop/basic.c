@@ -329,3 +329,25 @@ int main() {
     printf("Even digit count: %d\n", count);
     return 0;
 }
+
+
+
+/**
+ * print first digit of integer
+ */
+#include <stdio.h>
+
+int main() {
+    int num;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    if (num < 0) num = -num;
+
+    while (num >= 10) {
+        num /= 10;
+    }
+
+    printf("First digit: %d\n", num);
+    return 0;
+}
