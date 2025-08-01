@@ -351,3 +351,47 @@ int main() {
     printf("First digit: %d\n", num);
     return 0;
 }
+
+/**
+ * check if the digits of a number are in increasing or decreasing order
+ */
+#include <stdio.h>
+
+int main() {
+    int num, prev_digit, curr_digit;
+    int increasing = 1, decreasing = 1;
+
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    // Handle negative numbers
+    if (num < 0) {
+        num = -num;
+    }
+
+    prev_digit = num % 10;
+    num /= 10;
+
+    while (num > 0) {
+        curr_digit = num % 10;
+
+        if (curr_digit < prev_digit) {
+            decreasing = 0;
+        } else if (curr_digit > prev_digit) {
+            increasing = 0;
+        }
+
+        prev_digit = curr_digit;
+        num /= 10;
+    }
+
+    if (increasing) {
+        printf("Digits are in increasing order.\n");
+    } else if (decreasing) {
+        printf("Digits are in decreasing order.\n");
+    } else {
+        printf("Digits are not in order.\n");
+    }
+
+    return 0;
+}
