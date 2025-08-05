@@ -395,3 +395,20 @@ int main() {
 
     return 0;
 }
+
+
+/**
+ * Find the Last Digit of a Number 
+ */
+
+#include <stdio.h>
+int main() {
+    int num;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    int lastDigit = num % 10;
+    printf("Last digit: %d\n", lastDigit);
+
+    return 0;
+}
