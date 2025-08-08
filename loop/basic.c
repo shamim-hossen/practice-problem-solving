@@ -430,3 +430,28 @@ int main() {
 
     return 0;
 }
+
+
+/*
+    Check if a Number is a Palindrome
+*/
+
+#include <stdio.h>
+int main() {
+    int num, original, reverse = 0;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+    original = num;
+
+    while(num != 0) {
+        reverse = reverse * 10 + num % 10;
+        num /= 10;
+    }
+
+    if(original == reverse)
+        printf("Palindrome\n");
+    else
+        printf("Not Palindrome\n");
+
+    return 0;
+}
