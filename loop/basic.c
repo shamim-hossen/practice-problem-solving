@@ -622,3 +622,25 @@ int main() {
 
     return 0;
 }
+
+/**
+ * Check if Number is Perfect
+ */
+#include <stdio.h>
+int main() {
+    int num, sum = 0;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    for(int i = 1; i < num; i++) {
+        if(num % i == 0)
+            sum += i;
+    }
+
+    if(sum == num)
+        printf("Perfect Number\n");
+    else
+        printf("Not Perfect\n");
+
+    return 0;
+}
