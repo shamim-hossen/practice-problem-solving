@@ -687,3 +687,21 @@ int main() {
     printf("Odd digits: %d\n", odd);
     return 0;
 }
+
+
+/**
+ * Sum of First N Even Numbers
+ */
+#include <stdio.h>
+int main() {
+    int n, sum = 0;
+    printf("Enter how many even numbers to sum: ");
+    scanf("%d", &n);
+
+    for(int i = 1; i <= n; i++) {
+        sum += 2 * i;
+    }
+
+    printf("Sum of first %d even numbers = %d\n", n, sum);
+    return 0;
+}
