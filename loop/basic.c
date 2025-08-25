@@ -705,3 +705,30 @@ int main() {
     printf("Sum of first %d even numbers = %d\n", n, sum);
     return 0;
 }
+
+
+/**
+ * Check if All Digits Are Even
+ */
+#include <stdio.h>
+int main() {
+    int num, digit, allEven = 1;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    while(num > 0) {
+        digit = num % 10;
+        if(digit % 2 != 0) {
+            allEven = 0;
+            break;
+        }
+        num /= 10;
+    }
+
+    if(allEven)
+        printf("All digits are even\n");
+    else
+        printf("Not all digits are even\n");
+
+    return 0;
+}
