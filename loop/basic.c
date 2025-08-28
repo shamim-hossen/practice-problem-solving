@@ -770,3 +770,31 @@ int main() {
     printf("Product of digits = %d\n", product);
     return 0;
 }
+
+/**
+ * Check if a Digit Exists in Number
+ */
+#include <stdio.h>
+int main() {
+    int num, digit, found = 0;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+    printf("Enter digit to search: ");
+    scanf("%d", &digit);
+
+    int temp = num;
+    while(temp > 0) {
+        if(temp % 10 == digit) {
+            found = 1;
+            break;
+        }
+        temp /= 10;
+    }
+
+    if(found)
+        printf("Digit %d is in number %d\n", digit, num);
+    else
+        printf("Digit %d is not in number %d\n", digit, num);
+
+    return 0;
+}
