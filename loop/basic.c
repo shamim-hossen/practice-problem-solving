@@ -798,3 +798,26 @@ int main() {
 
     return 0;
 }
+
+
+/**
+ * Check if Sum of Digits is Even
+ */
+#include <stdio.h>
+int main() {
+    int num, sum = 0;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    while(num > 0) {
+        sum += num % 10;
+        num /= 10;
+    }
+
+    if(sum % 2 == 0)
+        printf("Sum of digits is even\n");
+    else
+        printf("Sum of digits is odd\n");
+
+    return 0;
+}
