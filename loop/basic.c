@@ -821,3 +821,20 @@ int main() {
 
     return 0;
 }
+
+/**
+ * Find the First Digit of a Number
+ */
+#include <stdio.h>
+int main() {
+    int num;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    while(num >= 10) {
+        num /= 10;
+    }
+
+    printf("First digit = %d\n", num);
+    return 0;
+}
