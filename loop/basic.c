@@ -838,3 +838,28 @@ int main() {
     printf("First digit = %d\n", num);
     return 0;
 }
+
+/**
+ * Check if First and Last Digits are the Same
+ */
+#include <stdio.h>
+int main() {
+    int num, first, last;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    last = num % 10;
+
+    while(num >= 10) {
+        num /= 10;
+    }
+
+    first = num;
+
+    if(first == last)
+        printf("First and last digits are the same\n");
+    else
+        printf("First and last digits are different\n");
+
+    return 0;
+}
