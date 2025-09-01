@@ -863,3 +863,27 @@ int main() {
 
     return 0;
 }
+
+
+/**
+ * Check if a Number is Harshad Number (Niven Number)
+ */
+#include <stdio.h>
+int main() {
+    int num, sum = 0, temp;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    temp = num;
+    while(temp > 0) {
+        sum += temp % 10;
+        temp /= 10;
+    }
+
+    if(num % sum == 0)
+        printf("Harshad (Niven) number\n");
+    else
+        printf("Not a Harshad number\n");
+
+    return 0;
+}
