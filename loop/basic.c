@@ -928,3 +928,25 @@ int main() {
     printf("Single digit sum = %d\n", num);
     return 0;
 }
+
+/**
+ * Find Difference Between Sum of Even and Odd Digits
+ */
+#include <stdio.h>
+int main() {
+    int num, evenSum = 0, oddSum = 0;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    while(num > 0) {
+        int digit = num % 10;
+        if(digit % 2 == 0)
+            evenSum += digit;
+        else
+            oddSum += digit;
+        num /= 10;
+    }
+
+    printf("Difference = %d\n", evenSum - oddSum);
+    return 0;
+}
