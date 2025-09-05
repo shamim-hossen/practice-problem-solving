@@ -950,3 +950,23 @@ int main() {
     printf("Difference = %d\n", evenSum - oddSum);
     return 0;
 }
+
+/**
+ * Find the Smallest Digit in a Number
+ */
+#include <stdio.h>
+int main() {
+    int num, digit, min = 9;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    while(num > 0) {
+        digit = num % 10;
+        if(digit < min)
+            min = digit;
+        num /= 10;
+    }
+
+    printf("Smallest digit = %d\n", min);
+    return 0;
+}
