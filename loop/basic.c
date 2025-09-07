@@ -970,3 +970,34 @@ int main() {
     printf("Smallest digit = %d\n", min);
     return 0;
 }
+
+/**
+ * Check if Number is Strong Number
+ */
+#include <stdio.h>
+
+int factorial(int n) {
+    int fact = 1;
+    for(int i = 1; i <= n; i++)
+        fact *= i;
+    return fact;
+}
+
+int main() {
+    int num, temp, sum = 0;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    temp = num;
+    while(temp > 0) {
+        sum += factorial(temp % 10);
+        temp /= 10;
+    }
+
+    if(sum == num)
+        printf("Strong number\n");
+    else
+        printf("Not a strong number\n");
+
+    return 0;
+}
