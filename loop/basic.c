@@ -1001,3 +1001,28 @@ int main() {
 
     return 0;
 }
+
+/**
+ * Check if Number is Spy Number
+ */
+#include <stdio.h>
+int main() {
+    int num, sum = 0, product = 1, digit;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    while(num > 0) {
+        digit = num % 10;
+        sum += digit;
+        product *= digit;
+        num /= 10;
+    }
+
+    if(sum == product)
+        printf("Spy number\n");
+    else
+        printf("Not a spy number\n");
+
+    return 0;
+}
+
