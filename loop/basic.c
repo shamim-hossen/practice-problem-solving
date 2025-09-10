@@ -1026,3 +1026,28 @@ int main() {
     return 0;
 }
 
+/**
+ * Check if Number is Duck Number
+ */
+#include <stdio.h>
+int main() {
+    int num, digit;
+    int hasZero = 0;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    while(num > 0) {
+        digit = num % 10;
+        if(digit == 0)
+            hasZero = 1;
+        num /= 10;
+    }
+
+    if(hasZero)
+        printf("Duck number\n");
+    else
+        printf("Not a duck number\n");
+
+    return 0;
+}
+
