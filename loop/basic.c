@@ -1093,3 +1093,28 @@ int main() {
     printf("%d^%d = %d\n", base, exponent, result);
     return 0;
 }
+
+/**
+ * Print All Digits Separately
+ */
+#include <stdio.h>
+int main() {
+    int num, rev = 0;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    // Reverse to print digits in original order
+    int temp = num;
+    while(temp > 0) {
+        rev = rev * 10 + temp % 10;
+        temp /= 10;
+    }
+
+    printf("Digits: ");
+    while(rev > 0) {
+        printf("%d ", rev % 10);
+        rev /= 10;
+    }
+
+    return 0;
+}
