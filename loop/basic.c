@@ -1118,3 +1118,24 @@ int main() {
 
     return 0;
 }
+
+/**
+ * Find Average of Digits in a Number
+ */
+#include <stdio.h>
+int main() {
+    int num, sum = 0, count = 0;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    int temp = num;
+    while(temp > 0) {
+        sum += temp % 10;
+        count++;
+        temp /= 10;
+    }
+
+    float average = (float)sum / count;
+    printf("Average of digits = %.2f\n", average);
+    return 0;
+}
