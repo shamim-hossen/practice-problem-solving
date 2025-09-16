@@ -866,7 +866,7 @@ int main() {
 
 
 /**
- * Check if a Number is Harshad Number (Niven Number)
+ * Check if a Number is hashad Number (Niven Number)
  */
 #include <stdio.h>
 int main() {
@@ -1137,5 +1137,31 @@ int main() {
 
     float average = (float)sum / count;
     printf("Average of digits = %.2f\n", average);
+    return 0;
+}
+
+/**
+ * Check if a Number is Binary (only 0s and 1s)
+ */
+#include <stdio.h>
+int main() {
+    int num, digit, isBinary = 1;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    while(num > 0) {
+        digit = num % 10;
+        if(digit != 0 && digit != 1) {
+            isBinary = 0;
+            break;
+        }
+        num /= 10;
+    }
+
+    if(isBinary)
+        printf("Binary number\n");
+    else
+        printf("Not a binary number\n");
+
     return 0;
 }
