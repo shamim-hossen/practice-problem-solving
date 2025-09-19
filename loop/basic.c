@@ -1186,3 +1186,26 @@ int main() {
     printf("Decimal = %d\n", decimal);
     return 0;
 }
+
+
+/**
+ * Count Zeros in a Number
+ */
+#include <stdio.h>
+int main() {
+    int num, digit, count = 0;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    if(num == 0) count = 1;
+
+    while(num > 0) {
+        digit = num % 10;
+        if(digit == 0)
+            count++;
+        num /= 10;
+    }
+
+    printf("Number of zeros = %d\n", count);
+    return 0;
+}
