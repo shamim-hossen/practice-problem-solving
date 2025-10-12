@@ -1526,3 +1526,33 @@ int main() {
     return 0;
 }
 
+
+/**
+ * Pascal's triangle
+ */
+#include <stdio.h>
+int main() {
+    int n, coef;
+    printf("Enter the number of rows: ");
+    scanf("%d", &n);
+    // Generate Pascal's Triangle
+    for (int i = 0; i < n; i++) {
+        // Print spaces for alignment
+        for (int space = 1; space <= n - i; space++)
+            printf("  "); // two spaces for better shape
+
+        // Print coefficients
+        for (int j = 0; j <= i; j++) {
+            if (j == 0 || i == 0)
+                coef = 1;
+            else
+                coef = coef * (i - j + 1) / j;
+
+            printf("%4d", coef); // spacing for alignment
+        }
+        printf("\n");
+    }
+    return 0;
+}
+
+
