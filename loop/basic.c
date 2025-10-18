@@ -1604,3 +1604,29 @@ int main() {
     }
     return 0;
 }
+
+/**
+ * Hollow Inverted Pyramid
+ */
+#include <stdio.h>
+int main() {
+    int n;
+    printf("Enter the number of rows: ");
+    scanf("%d", &n);
+    for (int i = n; i >= 1; i--) {
+        // Print leading spaces
+        for (int space = n; space > i; space--) {
+            printf(" ");
+        }
+        // Print hollow stars
+        for (int j = 1; j <= (2 * i - 1); j++) {
+            if (j == 1 || j == (2 * i - 1) || i == n)
+                printf("*");
+            else
+                printf(" ");
+        }
+        printf("\n");
+    }
+    return 0;
+}
+
