@@ -12,3 +12,20 @@ Basic Input/Output & Data Types
 9.Find ASCII value of a character.
 10.Compute the average of three numbers.
 **/
+
+
+
+/**
+Conditional Statements (if, else, switch)
+
+1.heck even or odd.
+2.Check positive, negative, or zero.
+3.Find the largest of 2 and 3 numbers.
+4.Check leap year.
+5.Check character vowel or consonant.
+6.Check uppercase, lowercase, digit, or special character.
+7.Create a simple calculator using switch-case.
+8.Grading system (marks → grade)
+9.Check divisibility (by 3 and 5, etc.).
+10.Check triangle type (equilateral, isosceles, scalene).
+ */
