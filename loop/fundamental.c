@@ -51,3 +51,28 @@ Loops (for, while, do-while)
 14.Prime number check.
 15.Display all prime numbers between 1–N.
  */
+
+
+/**
+Patterns (Stars & Numbers)
+
+🔸 Star Patterns
+1.Half pyramid (*)
+2.Inverted half pyramid
+3.Full pyramid
+4.Inverted full pyramid
+5.Diamond pattern
+6.Hollow pyramid
+7.Hollow square
+8.Hollow diamond
+9.Right-angled hollow triangle
+10.Pascal’s triangle
+11.Floyd’s triangle
+🔸 Number Pattern
+12.Half pyramid with numbers
+13.Inverted number pyramid
+14.Continuous numbers (1, 2, 3, 4…)
+15.Palindromic number pyramid
+16.Diamond with numbers
+17.Hollow number pyramid
+ */
