@@ -76,3 +76,17 @@ Patterns (Stars & Numbers)
 16.Diamond with numbers
 17.Hollow number pyramid
  */
+
+
+/**
+5. Functions
+
+Function to find factorial.
+Function to check prime number.
+Function to find GCD/LCM.
+Function to calculate power.
+Function to check Armstrong number.
+Function to swap numbers (with pointers).
+Function to find sum of digits.
+Function to return Fibonacci sequence.
+ */
