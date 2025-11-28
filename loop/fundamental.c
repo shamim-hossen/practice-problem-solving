@@ -79,7 +79,7 @@ Patterns (Stars & Numbers)
 
 
 /**
-5. Functions
+Functions
 
 Function to find factorial.
 Function to check prime number.
@@ -90,3 +90,22 @@ Function to swap numbers (with pointers).
 Function to find sum of digits.
 Function to return Fibonacci sequence.
  */
+
+
+
+/** 
+Arrays
+
+Input and print array elements.
+Sum and average of array elements.
+Find largest and smallest elements.
+Reverse an array.
+Count even and odd numbers.
+Search element (linear search).
+Binary search.
+Sort array (bubble sort, selection sort).
+Merge two arrays.
+Find frequency of elements.
+Find second largest element.
+Copy elements from one array to another.
+*/
