@@ -109,3 +109,19 @@ Find frequency of elements.
 Find second largest element.
 Copy elements from one array to another.
 */
+
+
+/**
+Strings
+
+Input and print string.
+Find string length (without strlen).
+Reverse a string.
+Check palindrome string.
+Compare two strings (without strcmp).
+Copy one string to another.
+Count vowels, consonants, digits, and spaces.
+Convert string to uppercase/lowercase.
+Concatenate two strings (without strcat).
+Count frequency of characters.
+ */
