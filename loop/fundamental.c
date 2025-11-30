@@ -125,3 +125,16 @@ Convert string to uppercase/lowercase.
 Concatenate two strings (without strcat).
 Count frequency of characters.
  */
+
+
+/**
+Pointers
+
+Print value and address of variable.
+Add two numbers using pointers.
+Swap two numbers using pointers.
+Access array elements using pointers.
+Pointer to pointer example.
+Function call using pointers.
+Find length of string using pointer.
+ */
