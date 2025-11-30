@@ -138,3 +138,17 @@ Pointer to pointer example.
 Function call using pointers.
 Find length of string using pointer.
  */
+
+
+/**
+Structures
+
+Store and display student details (name, roll, marks).
+Calculate total and average marks using structure.
+Store employee details (name, id, salary).
+Use structure with array (multiple records).
+Pass structure to a function.
+Nested structure (structure inside structure)
+ */
+
+
