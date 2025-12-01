@@ -152,3 +152,12 @@ Nested structure (structure inside structure)
  */
 
 
+/**
+File Handling
+
+Write and read data from a file.
+Append data to a file.
+Count lines, words, and characters in a file.
+Copy contents from one file to another.
+Store and display student records using file.
+ */
