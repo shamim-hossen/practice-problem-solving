@@ -161,3 +161,19 @@ Count lines, words, and characters in a file.
 Copy contents from one file to another.
 Store and display student records using file.
  */
+
+
+/**
+Logic/Advanced Practice (for real skill growth)
+
+Matrix addition, subtraction, and multiplication.
+Transpose of a matrix.
+Find determinant of 2x2 matrix.
+Sort strings alphabetically.
+Recursion problems (factorial, Fibonacci, GCD).
+Armstrong and palindrome using recursion.
+Mini calculator (menu-driven).
+Mini project: Student Result System (structure + file).
+Mini project: Library Management System.
+Mini project: Bank Account System (CRUD operations).
+ */
