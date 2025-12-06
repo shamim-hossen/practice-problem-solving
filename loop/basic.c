@@ -1630,3 +1630,17 @@ int main() {
     return 0;
 }
 
+
+
+/**
+ * Input and Print a String
+ */
+#include<stdio.h>
+int main(){
+    char str[100];
+    print("Enter a string:");
+    fgets(str, sizeof(str),stdin);
+
+    printf("You entered: %s", str);
+    return 0;
+}
