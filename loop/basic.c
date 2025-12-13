@@ -1666,3 +1666,23 @@ int main() {
     printf("Length = %d\n", length);
     return 0;
 }
+
+
+/**
+ * Reverse a String
+ */
+#include <stdio.h>
+int main() {
+    char str[100], rev[100];
+    int len = 0, i;
+    printf("Enter a string: ");
+    fgets(str, sizeof(str), stdin);
+    while (str[len] != '\0') len++;
+    if (str[len - 1] == '\n') len--;
+    for (i = 0; i < len; i++) {
+        rev[i] = str[len - i - 1];
+    }
+    rev[len] = '\0';
+    printf("Reversed: %s\n", rev);
+    return 0;
+}
