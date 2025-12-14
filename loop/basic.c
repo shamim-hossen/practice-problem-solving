@@ -1686,3 +1686,25 @@ int main() {
     printf("Reversed: %s\n", rev);
     return 0;
 }
+
+/**
+ * Check Palindrome String
+ */
+#include <stdio.h>
+int main() {
+    char str[100];
+    int len = 0, i, flag = 1;
+    printf("Enter a string: ");
+    fgets(str, sizeof(str), stdin);
+    while (str[len] != '\0') len++;
+    if (str[len - 1] == '\n') len--;
+    for (i = 0; i < len / 2; i++) {
+        if (str[i] != str[len - i - 1]) {
+            flag = 0;
+            break;
+        }
+    }
+    if (flag) printf("Palindrome\n");
+    else printf("Not Palindrome\n");
+    return 0;
+}
