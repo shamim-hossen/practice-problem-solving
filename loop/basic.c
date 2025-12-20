@@ -1708,3 +1708,26 @@ int main() {
     else printf("Not Palindrome\n");
     return 0;
 }
+
+
+/**
+ * Compare Two Strings (without strcmp)
+ */
+#include <stdio.h>
+int main() {
+    char s1[100], s2[100];
+    int i, flag = 1;
+    printf("Enter first string: ");
+    fgets(s1, sizeof(s1), stdin);
+    printf("Enter second string: ");
+    fgets(s2, sizeof(s2), stdin);
+    for (i = 0; s1[i] != '\0' || s2[i] != '\0'; i++) {
+        if (s1[i] != s2[i]) {
+            flag = 0;
+            break;
+        }
+    }
+    if (flag) printf("Strings are equal\n");
+    else printf("Strings are NOT equal\n");
+    return 0;
+}
