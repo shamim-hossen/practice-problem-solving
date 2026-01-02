@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "One-Click Full Screenshot",
+  "version": "1.0",
+  "permissions": ["debugger", "activeTab", "downloads"],
+  "action": {
+    "default_title": "Take Full Screenshot"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
