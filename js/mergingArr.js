@@ -18,3 +18,6 @@ arr1.push(...arr2);
 console.log(arr1); // [1, 2, 3, 4]
 
 
+// Array.flat()
+const nested = [[1, 2], [3, 4], [5, 6]];
+const merged = nested.flat(); // [1, 2, 3, 4, 5, 6]
