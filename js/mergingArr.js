@@ -27,3 +27,14 @@ const merged = nested.flat(); // [1, 2, 3, 4, 5, 6]
 const arr1 = [1, 2, 3];
 const arr2 = [2, 3, 4];
 const mergedUnique = [...new Set([...arr1, ...arr2])]; // [1, 2, 3, 4]
+
+
+// Multi-Merger
+const arr1 = [1, 2];
+const arr2 = ["a", "b"];
+const arr3 = [true];
+const arr4 = [100];
+
+const merged = [...arr1, ...arr2, ...arr3, ...arr4];
+
+console.log(merged); // [1, 2, "a", "b", true, 100]
