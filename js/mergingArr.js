@@ -34,7 +34,17 @@ const arr1 = [1, 2];
 const arr2 = ["a", "b"];
 const arr3 = [true];
 const arr4 = [100];
-
 const merged = [...arr1, ...arr2, ...arr3, ...arr4];
-
 console.log(merged); // [1, 2, "a", "b", true, 100]
+
+
+// Data Cleaner
+/**
+1. Merge and remove duplicates using Set
+2. Convert Set back to Array using spread
+3. Sort numerically
+ */
+const list1 = [10, 5, 8];
+const list2 = [5, 20, 10];
+const cleanList = [...new Set([...list1, ...list2])].sort((a, b) => a - b);
+console.log(cleanList); // [5, 8, 10, 20]
